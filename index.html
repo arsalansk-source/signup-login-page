@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account access</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght=400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="authContainer">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+            <form id="signUpForm">
+                <p class="eyebrow">Get started</p>
+                <h1>Create account</h1>
+                <div class="social-row">    
+                    <a href="https://accounts.google.com/signup" target="_blank" rel="noopener noreferrer" aria-label="Sign up with Google">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1h-9.17v2.92h5.28c-.23 1.36-1.6 4-5.28 4-3.18 0-5.78-2.63-5.78-5.87s2.6-5.87 5.78-5.87c1.81 0 3.03.77 3.72 1.44l2.54-2.45C16.95 3.57 14.83 2.6 12.18 2.6 6.98 2.6 2.75 6.86 2.75 12.15s4.23 9.55 9.43 9.55c5.44 0 9.05-3.83 9.05-9.22 0-.62-.07-1.09-.17-1.38z"/></svg>
+                    </a>
+                    <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer" aria-label="Sign up with GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.74-1.05 2.74-1.05.56 1.41.21 2.46.11 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/signup" target="_blank" rel="noopener noreferrer" aria-label="Sign up with LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8H9z"/></svg>
+                    </a>
+                </div>
+                <p class="small-note">or use your email for registration</p>
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit" class="cta cta-signup">Sign up</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+            <form id="signInForm">
+                <p class="eyebrow">Welcome back</p>
+                <h1>Sign in</h1>
+                <div class="social-row">
+                    <a href="https://accounts.google.com/signin" target="_blank" rel="noopener noreferrer" aria-label="Sign in with Google">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1h-9.17v2.92h5.28c-.23 1.36-1.6 4-5.28 4-3.18 0-5.78-2.63-5.78-5.87s2.6-5.87 5.78-5.87c1.81 0 3.03.77 3.72 1.44l2.54-2.45C16.95 3.57 14.83 2.6 12.18 2.6 6.98 2.6 2.75 6.86 2.75 12.15s4.23 9.55 9.43 9.55c5.44 0 9.05-3.83 9.05-9.22 0-.62-.07-1.09-.17-1.38z"/></svg>
+                    </a>
+                    <a href="https://github.com/login" target="_blank" rel="noopener noreferrer" aria-label="Sign in with GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.74-1.05 2.74-1.05.56 1.41.21 2.46.11 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" aria-label="Sign in with LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8H9z"/></svg>
+                    </a>
+                </div>
+                <p class="small-note">or use your account</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                    <a href="https://accounts.google.com/signin/recovery" class="forgot" target="_blank" rel="noopener noreferrer">Forgot your password?</a>
+                <button type="submit" class="cta">Sign in</button>
+            </form>
+        </div>
+
+        <!-- Sliding Overlay Panels -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <div class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+                    </div>
+                    <h2>Welcome back!</h2>
+                    <p>Already have an account? Sign in to pick up right where you left off.</p>
+                    <a href="#login" class="ghost" id="goSignIn">Sign in</a>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <div class="mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
+                    </div>
+                    <h2>Hello, friend!</h2>
+                    <p>New here? Create an account and start your journey with us today.</p>
+                    <a href="#signup" class="ghost" id="goSignUp">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external interaction script -->
+    <script src="script.js"></script>
+</body>
+</html>
